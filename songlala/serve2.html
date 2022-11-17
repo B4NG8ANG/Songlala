@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <style>
+
+    body      {background-color: #A09B9A;}
+
+
+    header    {position: absolute; left: 170px; top: 40px;
+              width: 220px;}
+    #logo     {height: 90px; margin-bottom: 30px;}
+    #headermenu     {border-radius: 5px;
+                     height: 800px;
+                     background-color: #E1BDD8; color: white;}
+    .inputA   {position: relative; top: 10px; left: 27px;
+               margin-top: 10px;
+               height: 30px; width: 165px;
+               border-radius: 3px; border: 0px;}
+    .buttonA  {position: relative; top: 20px; left: 27px;
+               height: 30px; width: 165px;
+               border-radius: 5px;
+               font-weight: 600;
+               background-color: #EAA2C5; color: white;}
+    .buttonB  {position: relative; top: 27px; left: 27px;
+               height: 30px; width: 80px;
+               border-radius: 5px;
+               font-weight: 600; font-size:12px;
+               background-color: #EAA2C5; color: white;}
+    hr        {position: relative; top: 40px;}
+    ul        {position: relative; top: 40px; font-weight: 600;}
+    .linkA:link {text-decoration: none; color: white;}
+    .linkA:visited {text-decoration: none; color: white;}
+
+
+    section {position: absolute;
+             margin-left: 410px;
+             width: 1000px;
+             color: #E1BDD8; }
+    .inputB {position: relative; top: 80px; left: 60px;
+             width: 745px; height: 30px;
+             border-radius: 5px;}
+    .buttonC {position: relative; top: 80px; left: 70px;
+              height: 40px; width: 45px;
+              border-radius: 5px;
+              font-weight: 600;
+              background-color: #EAA2C5; color: white;}
+     h2 {margin-top: 100px; margin-left: 60px;
+         width: 800px;
+         font-size: 30px;}
+     .comment {margin-left: 60px; margin-bottom: 80px;
+               font-weight: 600;}
+     .optiontitle {float: left; margin-left: 60px; margin-right: 120px;
+              font-size: 20px; font-weight: 600;
+              color: white;}
+     select {float: left; position: relative;
+             margin-top: 20px; margin-left: 60px; margin-right: 60px; margin-bottom: 70px;
+             width: 100px; height: 30px;
+             border-radius: 5px;}
+     .genderoption {margin-top: 200px; margin-left: 100px;
+                    width: 300px; height: 50px;
+                    color: white;}
+     .buttonD {margin-left: 530px; margin-top: 0px;
+               width: 300px; height: 40px;
+               background-color: #EAA2C5; color: white;
+               border-radius: 5px;}
+
+
+    footer {position: relative; top: 900px; left: 163px;
+            width: 1120px; height: 140px;
+            background-color: black;
+            font-weight: 600; font-size: 12px;
+            color: white;}
+    .footermenu {padding-top: 10px;
+                           text-align: center;}
+    .footerinfo {margin-left: 230px; margin-bottom: 5px;}
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+  <header>
+    <a href="index.html">
+      <div id="logo">
+        <img src="SongLaLa_logo.png">
+      </div>
+    </a>
+
+    <div id="headermenu">
+
+      <input class="inputA" type="text" value="" placeholder=" Username">
+      <input class="inputA" type="password" value="" placeholder=" Password">
+
+      <button class="buttonA" type="submit">로그인</button>
+
+      <button class="buttonB" type="button" onclick="location.href='serve4.html'">회원가입</button>
+      <button class="buttonB" type="button">ID/PW 찾기</button>
+
+      <hr>
+
+      <ul>
+        <li>주간 인기</li>
+        <li>월간 인기</li>
+        <li><a class="linkA" href="serve1.html">인기 급상승 TOP 10<a></li>
+        <li>BEST! 명예의 전당</li>
+      </ul>
+
+      <hr>
+
+      <ul type="square">
+        <li>내가 많이 들은 곡</li>
+        <li>내가 찜한 곡</li>
+      </ul>
+
+      <hr>
+
+      <ul type="circle">
+        <li><a class="linkA" href="https://www.melon.com/chart/" target="_blank">멜론 차트 보러가기</a></li>
+        <li><a class="linkA" href="serve2.html">취향 검색! 나만의 음악 들으러가기<a></li>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <li>아티스트</li>
+        <li>최근 뉴스</li>
+      </ul>
+
+      <hr>
+
+      <ul type="square">
+        <li><a class="linkA" href="index.html">홈으로</a></li>
+      </ul>
+
+      <hr>
+
+    </div>
+  </header>
+
+
+  <section>
+      <input class="inputB" type="text" placeholder="  노래 제목 / 가수로 검색">
+      <button class="buttonC" type="submit">검색</button>
+
+      <h2>취향 검색! 나만의 음악 듣기</h2>
+      <div class="comment">당신의 취향을 분석해 당신에게 최적인 음악을 찾아드립니다.</div>
+
+
+      <div class="optiontitle">국가</div>
+      <div class="optiontitle">장르</div>
+      <div class="optiontitle">연령</div>
+      <div class="optiontitle">발매 년도</div>
+
+      <select>
+        <option> 선택하세요</option>
+        <option> 한국</option>
+        <option> 미국</option>
+        <option> 중국</option>
+        <option> 일본</option>
+      </select>
+
+      <select>
+        <option> 선택하세요</option>
+        <option> 팝</option>
+        <option> 발라드</option>
+        <option> 힙합</option>
+        <option> 댄스</option>
+      </select>
+
+      <select>
+        <option> 선택하세요</option>
+        <option> 10대 ~ 20대</option>
+        <option> 20대 ~ 30대</option>
+        <option> 30대 ~ 40대</option>
+        <option> 40대 ~ 50대</option>
+      </select>
+
+      <select>
+        <option> 선택하세요</option>
+        <option> 1980년대</option>
+        <option> 1990년대</option>
+        <option> 2000년대</option>
+        <option> 2010년대 이후</option>
+      </select>
+
+      <div class="optiontitle">성별</div>
+
+      <div class="genderoption">
+        <input type="radio" name="gender">남자
+        <input type="radio" name="gender">여자
+      </div>
+
+      <button class="buttonD" type="button" onclick="location.href='serve3.html'">제출하기</button>
+  </section>
+
+
+    <footer>
+      <div class="footermenu"> | &nbsp;사이트 이용약관&nbsp; | &nbsp;개인정보 취급 방침&nbsp; | &nbsp;제휴문의&nbsp; | &nbsp;광고문의&nbsp; | &nbsp;회사소개&nbsp; | &nbsp;청소년 보호정책&nbsp; | &nbsp;저작권 보호정책&nbsp; | </div> <br>
+      <div class="footerinfo"> 발행인: 방인호 &nbsp; 편집인: 방인호 &nbsp; 발행번호: 20192682 </div>
+      <div class="footerinfo"> tel: 010-6689-4113 &nbsp; email: 02inho02@gmail.com </div>
+      <div class="footerinfo"> Copyright (c) 송랄라 All right reserved.<div>
+    </footer>
+ </body>
+
+ </html>
